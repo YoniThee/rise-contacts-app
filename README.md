@@ -1,70 +1,68 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This is a React-based front-end application for managing contacts. It allows users to create, edit, delete, and search contacts. The app interacts with a backend API to perform CRUD (Create, Read, Update, Delete) operations.
 
-## Available Scripts
+### Installation
+To set up the project locally, follow the steps below:
 
-In the project directory, you can run:
+### Prerequisites
+Ensure you have the following installed:
 
-### `npm start`
+* Node.js (version 12 or higher)
+* npm (Node package manager)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+And most important - **clone this repo https://github.com/YoniThee/Rise_ContactsApp.git for running the backend server that managing all this app.** (follow the readme file of the repo for better use)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Steps
+**1.** Clone the repository:
+```
+git clone https://github.com/your-username/contacts-ui.git
+```
+**2.** Navigate to the project folder:
+```
+cd contacts-ui
+```
+**3.** Install the dependencies:
+```
+npm install
+```
+**4.** Set the base URL for your backend API in the config.js file:
+```
+export const BASE_URL = 'http://localhost:5000/contacts'; // Replace with the correct backend API URL
+```
+**5.** Start the development server:
+```
+npm start
+```
+This will run the app at http://localhost:3000 by default.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
+Once the app is running:
+The screen is look like this
+![image](https://github.com/user-attachments/assets/2add5857-ed2c-4e1c-890d-8d6b014e5c7d)
 
-### `npm run build`
+**1. Creating a New Contact:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Fill out the form with the contact’s first name, last name, phone number, and address.
+* Click the "Add Contact" button to create a new contact.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**2. Editing an Existing Contact:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Click the "Edit" button next to a contact in the contact list.
+* The contact’s details will appear in the form. Make your changes and click "Update Contact".
 
-### `npm run eject`
+**3. Deleting a Contact:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Click the "Delete" button next to a contact you want to remove.
+* The contact will be removed from the list.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**4. Searching Contacts:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Enter a search term (e.g., first name, last name, phone number) in the search box.
+* The contact list will filter to show only the contacts that match the search query.
+**Pagination:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* The contact list is paginated. Use the "Previous" and "Next" buttons to navigate between pages of contacts.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
