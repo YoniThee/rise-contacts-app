@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Rise Contact App UI
 
 ## Overview
 This is a React-based front-end application for managing contacts. It allows users to create, edit, delete, and search contacts. The app interacts with a backend API to perform CRUD (Create, Read, Update, Delete) operations.
